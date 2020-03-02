@@ -37,5 +37,25 @@ namespace TDD.Tests.Providers
                 DateOfFoundation = DateTime.Now
             }
         };
+
+        public static IList<Player> Players = new List<Player>
+        {
+            new Player
+            {
+                Id = 1,
+                FirstName = "test",
+                LastName = "test",
+                Position = "test",
+                TeamId = 1
+            },
+            new Player
+            {
+                Id = 2,
+                FirstName = "test2",
+                LastName = "test2",
+                Position = "test2",
+                TeamId = 2
+            }
+        };
     }
 }

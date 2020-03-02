@@ -29,6 +29,7 @@ namespace TDD
                 options.UseSqlServer(Configuration.GetConnectionString("TeamDb")));
 
             services.AddScoped<ITeamsRepository, TeamsRepository>();
+            services.AddScoped<IPlayerRepository, PlayerRepository>();
 
             services.AddMvc(option => option.EnableEndpointRouting = false)
                 .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
